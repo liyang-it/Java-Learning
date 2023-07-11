@@ -1,6 +1,7 @@
 package com.example.rabbitmqproducer.controller;
 import com.alibaba.fastjson2.JSONObject;
 import com.example.rabbitmqproducer.exchange.TopicRabbitConfig;
+import com.example.rabbitmqproducer.exchange.TopicToFanoutRabbitConfig;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -79,6 +80,20 @@ public class TopicExChangeMessageController {
 		json.put("createTime", createTime);
 		
 		template.convertAndSend("topicExchange", TopicRabbitConfig.ORDER_TEST, json);
+		log.info("消息发送成功");
+		return message;
+	}
+	
+	@ApiOperation(value = "使用 topic主题交换机实现 发布订阅模式交换机功能", notes = "发送消息")
+	@GetMapping(value = "/sendToFanout/{message}")
+	public String sendToFanout(@PathVariable(value = "message") String message){
+		
+		JSONObject json = new JSONObject();
+		json.put("messageData", message);
+		json.put("messageId", UUID.randomUUID().toString());
+		json.put("createTime", LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")));
+		
+		template.convertAndSend(TopicToFanoutRabbitConfig.TOPIC_FANOUT_EXCHANGE, TopicToFanoutRabbitConfig.TOPIC_FANOUT_DOG_QUEUE, json);
 		log.info("消息发送成功");
 		return message;
 	}

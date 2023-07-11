@@ -52,6 +52,9 @@ public class TopicRabbitConfig {
 	}
 	
 	
+
+	
+	
 	/**
 	 * 创建一个 topic主题交换机
 	 * @return {@link TopicExchange}
@@ -83,7 +86,6 @@ public class TopicRabbitConfig {
 	@Bean
 	public Binding bindingOrderTestExChangeQueue(){
 		return BindingBuilder.bind(topicOrderTestQueue()).to(exchange()).with(ORDER_TEST);
-		
 	}
 	
 }

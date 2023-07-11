@@ -1,5 +1,7 @@
 package com.example.rabbitmqconsumer.config;
 
+import com.example.rabbitmqconsumer.receiver.DelayTopicReceiver;
+import com.example.rabbitmqconsumer.receiver.DieMessageDirectReceiver;
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
@@ -7,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * <h2>消息监听配置</h2>
+ * <h2>消息监听配置, 不在yml配置中实现</h2>
  * <p>
  *
  * </p>
@@ -49,9 +51,11 @@ public class MessageListenerConfig {
 		container.setPrefetchCount(1);
 		
 		// 设置一个队列，将这个队列改为 手动确认模式，可以设置多个，前提是队列都必须已经创建存在的
-		container.setQueueNames("order.test");
+		container.setQueueNames(DieMessageDirectReceiver.DIRECT_CHANGE_ORDER_STATUS_QUEUE, DelayTopicReceiver.TOPIC_TEST_QUEUE);
 		
+		// 设置消息确认处理的具体类
 		container.setMessageListener(ackReceiver);
+		
 		
 		return container;
 	}

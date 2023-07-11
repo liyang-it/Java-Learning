@@ -12,9 +12,9 @@ spring:
       password: guest
     # 虚拟 host 一般都是一个项目创建一个对应的host，我这边就使用 默认 /
     virtual-host: /
-    # 开启 确认消息已发送到队列中(queue),如果不需要 消息确认可以把下面两行注释掉
+    # 开启 发布者 消息确认  已发送到队列中(queue),如果不需要 消息确认可以把下面两行注释掉
     publisher-returns: true
-    # 确认类型
+    # 发布者 确认类型
     publisher-confirm-type: correlated
 ## 日志
 logging:

@@ -34,17 +34,17 @@ public class RabbitConfig {
 		// 设置开启 Mandatory，才能触发回调函数，无论消息推送结果怎么样 都强制调用回调函数
 		 rabbitTemplate.setMandatory(true);
 		 
-		 // 发送消息确认函数
+		 // 发送消息到交换机异常会进入这个回调
 		 rabbitTemplate.setConfirmCallback(new RabbitTemplate.ConfirmCallback() {
 			 @Override
 			 public void confirm(CorrelationData correlationData, boolean ack, String cause) {
 				log.info("ConfirmCallback  相关数据: {}", correlationData);
-				log.info("ConfirmCallback  确认情况: {}", ack);
+				log.info("ConfirmCallback  是否已发送到交换机: {}", ack);
 				log.info("ConfirmCallback  原因: {}", cause);
 			 }
 		 });
 		
-		 // 发送消息
+		 // 发送消息到交换机成功，但是分发到具体路由队列失败会进入这个回调
 		rabbitTemplate.setReturnsCallback(new RabbitTemplate.ReturnsCallback() {
 			@Override
 			public void returnedMessage(ReturnedMessage returned) {
