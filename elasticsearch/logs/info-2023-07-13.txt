@@ -1,0 +1,137 @@
+2023-07-13 12:05:21,528 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 40240 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 12:05:21,530 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 12:07:06,795 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 36440 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 12:07:06,797 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 12:07:08,969 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 12:07:10,785 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.351 seconds (JVM running for 5.345)
+2023-07-13 12:07:10,788 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 12:21:29,822 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 12244 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 12:21:29,825 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 12:21:32,065 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 12:21:34,543 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 5.054 seconds (JVM running for 5.945)
+2023-07-13 12:21:34,637 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_estitle] 索引
+2023-07-13 12:21:46,547 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 40312 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 12:21:46,549 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 12:21:48,823 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 12:21:50,440 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.233 seconds (JVM running for 5.112)
+2023-07-13 12:22:03,676 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_estitle] 索引
+2023-07-13 12:22:34,299 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 25060 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 12:22:34,301 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 12:22:36,460 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 12:22:38,141 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.182 seconds (JVM running for 5.088)
+2023-07-13 12:22:40,735 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [estitle] 索引
+2023-07-13 12:22:55,454 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 34644 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 12:22:55,455 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 12:22:57,462 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 12:22:59,008 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 3.828 seconds (JVM running for 4.677)
+2023-07-13 12:22:59,009 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [estitle] 索引
+2023-07-13 14:35:19,578 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 14796 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 14:35:19,580 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 14:35:22,086 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 14:35:23,758 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.566 seconds (JVM running for 5.693)
+2023-07-13 14:35:23,760 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [estitle] 索引
+2023-07-13 15:15:52,328 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 37004 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 15:15:52,330 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:15:55,176 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 15:15:57,114 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 5.23 seconds (JVM running for 6.206)
+2023-07-13 15:15:57,117 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [estitle] 索引
+2023-07-13 15:15:57,258 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 索引不存在,创建 [true]
+2023-07-13 15:15:57,260 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 15:24:20,932 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 26108 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 15:24:20,934 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:24:23,452 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 15:24:25,376 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.847 seconds (JVM running for 5.786)
+2023-07-13 15:24:25,378 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 15:24:25,384 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 15:24:25,386 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 15:26:26,243 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 12668 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 15:26:26,244 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:26:28,358 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 15:26:30,108 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.223 seconds (JVM running for 5.184)
+2023-07-13 15:26:30,111 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 15:35:22,489 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 30964 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 15:35:22,490 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:35:24,577 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 15:35:26,206 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.063 seconds (JVM running for 4.969)
+2023-07-13 15:35:26,209 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 15:36:56,084 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 21692 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 15:36:56,086 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:36:58,154 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 15:37:00,020 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.28 seconds (JVM running for 5.19)
+2023-07-13 15:37:00,024 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 15:39:28,432 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 11576 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 15:39:28,434 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:39:30,498 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 15:39:32,065 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 3.981 seconds (JVM running for 4.975)
+2023-07-13 15:39:32,068 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 15:40:20,863 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 21076 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 15:40:20,866 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:40:22,900 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 15:40:24,635 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.109 seconds (JVM running for 5.005)
+2023-07-13 15:41:23,165 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 32688 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 15:41:23,166 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 15:41:25,244 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 15:41:26,981 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.162 seconds (JVM running for 5.163)
+2023-07-13 15:41:26,985 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 16:25:00,812 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 36188 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 16:25:00,814 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:25:12,183 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 34248 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 16:25:12,185 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:25:14,512 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 16:25:16,698 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.857 seconds (JVM running for 5.757)
+2023-07-13 16:25:16,700 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 16:25:16,706 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 16:25:16,708 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 16:50:56,471 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 21692 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 16:50:56,473 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:52:35,169 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 39724 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 16:52:35,170 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 16:52:37,497 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 16:52:39,155 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.339 seconds (JVM running for 5.324)
+2023-07-13 16:52:39,157 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 16:52:39,162 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 16:52:39,164 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 17:07:40,457 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 41188 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 17:07:40,459 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:07:42,583 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 17:07:44,180 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.066 seconds (JVM running for 4.955)
+2023-07-13 17:07:44,183 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 17:07:44,187 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 17:07:44,189 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 17:42:46,827 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 11644 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 17:42:46,828 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:42:49,167 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 17:42:50,884 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.444 seconds (JVM running for 5.517)
+2023-07-13 17:42:50,887 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 17:42:50,895 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 17:42:50,896 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 17:44:45,378 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 36496 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 17:44:45,379 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:44:47,569 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 17:44:49,237 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.227 seconds (JVM running for 5.191)
+2023-07-13 17:44:49,239 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 17:44:49,244 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 17:44:49,246 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 17:47:13,356 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 26136 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 17:47:13,357 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:47:15,431 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 17:47:17,049 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.034 seconds (JVM running for 5.043)
+2023-07-13 17:47:17,051 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 17:47:17,069 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 17:47:17,071 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 17:56:33,058 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 36500 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 17:56:33,059 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:56:42,035 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 35340 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 17:56:42,036 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:56:44,803 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 17:56:46,515 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.825 seconds (JVM running for 5.745)
+2023-07-13 17:56:46,517 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 17:56:46,521 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 17:56:46,523 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es
+2023-07-13 17:57:48,476 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Starting ElasticsearchApplication using Java 1.8.0_331 on ifi-liyang with PID 47184 (E:\idea_workspace\Java-Learning\elasticsearch\target\classes started by ifi-liyang in E:\idea_workspace\Java-Learning)
+2023-07-13 17:57:48,478 INFO [main] c.e.e.ElasticsearchApplication [? : ?] No active profile set, falling back to 1 default profile: "default"
+2023-07-13 17:57:50,669 INFO [main] c.e.elasticsearch.config.DruidConfig [? : ?] DruidDataSource连接池配置初始化成功
+2023-07-13 17:57:52,463 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Started ElasticsearchApplication in 4.334 seconds (JVM running for 5.359)
+2023-07-13 17:57:52,465 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] 系统启动,开始执行 创建初始化 [es_title] 索引
+2023-07-13 17:57:52,470 INFO [main] c.e.elasticsearch.task.AppStartTask [? : ?] [es_title] 索引 存在,不需要创建
+2023-07-13 17:57:52,471 INFO [main] c.e.e.ElasticsearchApplication [? : ?] Elastic Search示例 启动成功！！访问地址: http://127.0.0.1:8080/es

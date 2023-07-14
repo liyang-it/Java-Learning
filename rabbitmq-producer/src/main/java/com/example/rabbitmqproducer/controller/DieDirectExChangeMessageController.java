@@ -1,4 +1,5 @@
 package com.example.rabbitmqproducer.controller;
+
 import com.alibaba.fastjson2.JSONObject;
 import com.example.rabbitmqproducer.exchange.DieMessageDirectRabbitConfig;
 import io.swagger.annotations.Api;
@@ -35,14 +36,15 @@ public class DieDirectExChangeMessageController {
 	
 	private final RabbitTemplate template;
 	private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-	public DieDirectExChangeMessageController(RabbitTemplate template){
+	
+	public DieDirectExChangeMessageController(RabbitTemplate template) {
 		this.template = template;
 	}
 	
 	
 	@ApiOperation(value = "发送消息，有效期15秒未消费，消息进入到对应死信队列(测试方法，只启动发布者客户端发送消息，打开后台管理查看队列消息状态)", notes = "发送消息")
 	@GetMapping(value = "/send/{message}")
-	public String send(@PathVariable(value = "message") String message){
+	public String send(@PathVariable(value = "message") String message) {
 		
 		
 		String msgId = UUID.randomUUID().toString();
@@ -56,8 +58,7 @@ public class DieDirectExChangeMessageController {
 				// 持久化消息
 				.setDeliveryMode(MessageDeliveryMode.PERSISTENT)
 				// 有效期
-				.setExpiration("15000")
-				.build();
+				.setExpiration("15000").build();
 		
 		template.convertAndSend(DieMessageDirectRabbitConfig.DIRECT_ORDER_PAY_EXCHANGE, DieMessageDirectRabbitConfig.DIRECT_ORDER_PAY_QUEUE, msg);
 		
@@ -67,7 +68,7 @@ public class DieDirectExChangeMessageController {
 	
 	@ApiOperation(value = "发送消息，消费者端手动确认消费该消息，途中将该消息标记为死信状态，流入到对应死信队列处理", notes = "发送消息")
 	@GetMapping(value = "/send2/{message}")
-	public String send2(@PathVariable(value = "message") String message){
+	public String send2(@PathVariable(value = "message") String message) {
 		
 		
 		String msgId = UUID.randomUUID().toString();
@@ -81,15 +82,13 @@ public class DieDirectExChangeMessageController {
 				// 持久化消息
 				.setDeliveryMode(MessageDeliveryMode.PERSISTENT)
 				// 有效期
-				.setExpiration("600000")
-				.build();
+				.setExpiration("600000").build();
 		
 		template.convertAndSend(DieMessageDirectRabbitConfig.DIRECT_CHANGE_ORDER_STATUS_EXCHANGE, DieMessageDirectRabbitConfig.DIRECT_CHANGE_ORDER_STATUS_QUEUE, msg);
 		
 		log.info("消息发送成功");
 		return message;
 	}
-	
 	
 	
 }

@@ -27,15 +27,11 @@ public class DelayReceiver {
 	/**
 	 * 队列监听延迟消息
 	 */
-	@RabbitListener(bindings = @QueueBinding(
-			value = @Queue(name = DELAY_TEST_QUEUE),
-			exchange = @Exchange(name = DELAY_TEST_EXCHANGE, delayed = "true"),
-			key = DELAY_TEST_QUEUE
-	))
+	@RabbitListener(bindings = @QueueBinding(value = @Queue(name = DELAY_TEST_QUEUE), exchange = @Exchange(name = DELAY_TEST_EXCHANGE, delayed = "true"), key = DELAY_TEST_QUEUE))
 	@RabbitHandler
-	public void listenerDie(Message message){
+	public void listenerDie(Message message) {
 		log.info("方法二：使用插件实现延迟消息,队列 [{}]  消费时间：[{}] 监听到消息：[{}]", DELAY_TEST_QUEUE, formatter.format(LocalDateTime.now()), message);
 	}
-
-
+	
+	
 }

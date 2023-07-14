@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
 public class DirectReceiverCopy1Only {
 	
 	@RabbitHandler
-	public void listener(JSONObject json){
+	public void listener(JSONObject json) {
 		log.info("直连型交换机 copy-only1 队列：[{}] 接收到消息：{}", "TestDirectQueue", json);
 	}
 }

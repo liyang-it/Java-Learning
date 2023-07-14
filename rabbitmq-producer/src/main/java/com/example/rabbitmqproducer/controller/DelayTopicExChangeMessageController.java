@@ -1,8 +1,8 @@
 package com.example.rabbitmqproducer.controller;
+
 import com.alibaba.fastjson2.JSONObject;
 import com.example.rabbitmqproducer.exchange.DelayRabbitConfig;
 import com.example.rabbitmqproducer.exchange.DelayTopicRabbitConfig;
-import com.example.rabbitmqproducer.exchange.DieMessageDirectRabbitConfig;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -37,14 +37,15 @@ public class DelayTopicExChangeMessageController {
 	
 	private final RabbitTemplate template;
 	private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-	public DelayTopicExChangeMessageController(RabbitTemplate template){
+	
+	public DelayTopicExChangeMessageController(RabbitTemplate template) {
 		this.template = template;
 	}
 	
 	
 	@ApiOperation(value = "发送消息, 使用topic实现直连交换机功能，同时使用死信交换机实现延迟消息", notes = "发送消息")
 	@GetMapping(value = "/send/{message}")
-	public String send(@PathVariable(value = "message") String message){
+	public String send(@PathVariable(value = "message") String message) {
 		
 		
 		JSONObject json = new JSONObject();
@@ -57,8 +58,7 @@ public class DelayTopicExChangeMessageController {
 				// 持久化消息
 				.setDeliveryMode(MessageDeliveryMode.PERSISTENT)
 				// 设置过期时间，永远都不要消费这个消息，等待过期进入死信队列才消费,设置 5 秒
-				.setExpiration(String.valueOf(5 * 1000))
-				.build();
+				.setExpiration(String.valueOf(5 * 1000)).build();
 		
 		template.convertAndSend(DelayTopicRabbitConfig.TOPIC_TEST_EXCHANGE, DelayTopicRabbitConfig.TOPIC_TEST_QUEUE, msg);
 		
@@ -69,7 +69,7 @@ public class DelayTopicExChangeMessageController {
 	
 	@ApiOperation(value = "发送消息, 使用插件实现延迟消息", notes = "发送消息")
 	@GetMapping(value = "/send2/{message}")
-	public String send2(@PathVariable(value = "message") String message){
+	public String send2(@PathVariable(value = "message") String message) {
 		
 		
 		JSONObject json = new JSONObject();
@@ -82,8 +82,7 @@ public class DelayTopicExChangeMessageController {
 				// 持久化消息
 				.setDeliveryMode(MessageDeliveryMode.PERSISTENT)
 				// 设置延迟时间 设置 5 秒
-				.setHeader("x-delay", String.valueOf(5 * 1000))
-				.build();
+				.setHeader("x-delay", String.valueOf(5 * 1000)).build();
 		
 		template.convertAndSend(DelayRabbitConfig.DELAY_TEST_EXCHANGE, DelayRabbitConfig.DELAY_TEST_QUEUE, msg);
 		

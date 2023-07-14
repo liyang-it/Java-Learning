@@ -21,21 +21,21 @@ public class FanoutReceiver {
 	
 	@RabbitListener(queues = "fanout.A")
 	@RabbitHandler
-	public void topicManMessageA(JSONObject json){
+	public void topicManMessageA(JSONObject json) {
 		log.info("扇型交换机 队列：[{}] 接收到消息：{}", "fanout.A", json);
 	}
 	
 	@RabbitListener(queues = "fanout.B")
 	@RabbitHandler
-	public void topicManMessageB(JSONObject json){
+	public void topicManMessageB(JSONObject json) {
 		log.info("扇型交换机 队列：[{}] 接收到消息：{}", "fanout.B", json);
 	}
 	
 	@RabbitListener(queues = "fanout.C")
 	@RabbitHandler
-	public void topicManMessageC(JSONObject json){
+	public void topicManMessageC(JSONObject json) {
 		log.info("扇型交换机 队列：[{}] 接收到消息：{}", "fanout.C", json);
 	}
 	
-
+	
 }

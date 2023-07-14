@@ -1,6 +1,5 @@
 package com.example.rabbitmqconsumer.receiver;
 
-import com.alibaba.fastjson2.JSONObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
@@ -22,7 +21,7 @@ public class DirectMsgReceiver {
 	
 	@RabbitListener(queues = "DirectMsgQueue")
 	@RabbitHandler
-	public void listener(Message json){
+	public void listener(Message json) {
 		log.info("直连型交换机 队列：[{}] 接收到消息：{}", "DirectMsgQueue", json);
 	}
 }

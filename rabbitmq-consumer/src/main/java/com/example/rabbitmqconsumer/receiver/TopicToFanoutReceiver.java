@@ -30,28 +30,20 @@ public class TopicToFanoutReceiver {
 	private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 	
 	
-	@RabbitListener(bindings = @QueueBinding(
-			value = @Queue(name = TOPIC_FANOUT_DOG_QUEUE, durable = "true"),
-			exchange = @Exchange(name = TOPIC_FANOUT_EXCHANGE),
-			key = TOPIC_FANOUT_DOG_QUEUE
-	))
+	@RabbitListener(bindings = @QueueBinding(value = @Queue(name = TOPIC_FANOUT_DOG_QUEUE, durable = "true"), exchange = @Exchange(name = TOPIC_FANOUT_EXCHANGE), key = TOPIC_FANOUT_DOG_QUEUE))
 	@RabbitHandler
-	public void listenerDog(Message message){
+	public void listenerDog(Message message) {
 		String json = new String(message.getBody());
 		log.info("topic实现发布订阅模式交换机功能 ---- 队列： {}, 接收时间：{}, 消息：{}", TOPIC_FANOUT_DOG_QUEUE, formatter.format(LocalDateTime.now()), json);
 	}
 	
 	
-	@RabbitListener(bindings = @QueueBinding(
-			value = @Queue(name = TOPIC_FANOUT_CAT_QUEUE, durable = "true"),
-			exchange = @Exchange(name = TOPIC_FANOUT_EXCHANGE),
-			key = TOPIC_FANOUT_CAT_QUEUE
-	))
+	@RabbitListener(bindings = @QueueBinding(value = @Queue(name = TOPIC_FANOUT_CAT_QUEUE, durable = "true"), exchange = @Exchange(name = TOPIC_FANOUT_EXCHANGE), key = TOPIC_FANOUT_CAT_QUEUE))
 	@RabbitHandler
-	public void listenerCat(Message message){
+	public void listenerCat(Message message) {
 		String json = new String(message.getBody());
 		log.info("topic实现发布订阅模式交换机功能 ---- 队列： {}, 接收时间：{}, 消息：{}", TOPIC_FANOUT_CAT_QUEUE, formatter.format(LocalDateTime.now()), json);
 	}
-
+	
 	
 }

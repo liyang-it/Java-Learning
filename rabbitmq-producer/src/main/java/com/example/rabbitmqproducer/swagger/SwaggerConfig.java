@@ -2,7 +2,6 @@ package com.example.rabbitmqproducer.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.*;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -15,9 +14,9 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * <h2>swagger配置</h2>
  * <p>
- *  &#064;EnableSwagger2  开启Swagger使用(项目注释文档)
- *  &#064;Configuration  标明是配置类
- *  &#064;EnableWebMvc  解决SpringBoot2.6版本以后兼容Swagger2
+ * &#064;EnableSwagger2  开启Swagger使用(项目注释文档)
+ * &#064;Configuration  标明是配置类
+ * &#064;EnableWebMvc  解决SpringBoot2.6版本以后兼容Swagger2
  * </p>
  *
  * @author Evan <1922802352@qq.com>
@@ -25,7 +24,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @EnableSwagger2
 @Configuration
-public class SwaggerConfig{
+public class SwaggerConfig {
 	@Bean
 	public Docket createRestApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
@@ -36,12 +35,12 @@ public class SwaggerConfig{
 				//用于指定扫描哪个包下的接口
 				.apis(RequestHandlerSelectors.basePackage("com.example.rabbitmqproducer.controller"))
 				//选择所有的API,如果你想只为部分API生成文档，可以配置这里
-				.paths(PathSelectors.any())
-				.build();
+				.paths(PathSelectors.any()).build();
 	}
 	
 	/**
 	 * 用于定义API主界面的信息，比如可以声明所有的API的总标题、描述、版本
+	 *
 	 * @return {@link ApiInfo}
 	 */
 	private ApiInfo apiInfo() {
@@ -51,14 +50,12 @@ public class SwaggerConfig{
 				//用来描述整体的API
 				.description("MQ生产者客户端")
 				//创建人信息
-				.contact(new Contact("lizr","http://localhost:8888/rabbitmq/prod/swagger-ui.html","xxxxxxxx@163.com"))
+				.contact(new Contact("lizr", "http://localhost:8888/rabbitmq/prod/swagger-ui.html", "xxxxxxxx@163.com"))
 				//用于定义服务的域名
 				//.termsOfServiceUrl("")
 				//可以用来定义版本
-				.version("1.0")
-				.build();
+				.version("1.0").build();
 	}
 	
-
-
+	
 }

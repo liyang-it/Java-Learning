@@ -1,4 +1,5 @@
 package com.example.rabbitmqproducer.controller;
+
 import com.alibaba.fastjson2.JSONObject;
 import com.example.rabbitmqproducer.exchange.TopicRabbitConfig;
 import com.example.rabbitmqproducer.exchange.TopicToFanoutRabbitConfig;
@@ -31,13 +32,14 @@ import java.util.UUID;
 public class TopicExChangeMessageController {
 	
 	private final RabbitTemplate template;
-	public TopicExChangeMessageController(RabbitTemplate template){
+	
+	public TopicExChangeMessageController(RabbitTemplate template) {
 		this.template = template;
 	}
 	
 	@ApiOperation(value = "将消息发送到 topicExchange 交换机的 topic.man 路由对应队列中", notes = "发送消息")
 	@GetMapping(value = "/sendMan/{message}")
-	public String sendMan(@PathVariable(value = "message") String message){
+	public String sendMan(@PathVariable(value = "message") String message) {
 		
 		String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		
@@ -45,7 +47,7 @@ public class TopicExChangeMessageController {
 		json.put("messageData", message);
 		json.put("messageId", UUID.randomUUID().toString());
 		json.put("createTime", createTime);
-
+		
 		template.convertAndSend("topicExchange", TopicRabbitConfig.MAN, json);
 		log.info("消息发送成功");
 		return message;
@@ -53,7 +55,7 @@ public class TopicExChangeMessageController {
 	
 	@ApiOperation(value = "将消息发送到 topicExchange 交换机的 topic.woman 路由对应队列中", notes = "发送消息")
 	@GetMapping(value = "/sendWoMan/{message}")
-	public String sendWoMan(@PathVariable(value = "message") String message){
+	public String sendWoMan(@PathVariable(value = "message") String message) {
 		
 		String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		
@@ -70,7 +72,7 @@ public class TopicExChangeMessageController {
 	
 	@ApiOperation(value = "将消息发送到 topicExchange 交换机的 order.test 路由对应队列中", notes = "发送消息")
 	@GetMapping(value = "/sendTest/{message}")
-	public String sendTest(@PathVariable(value = "message") String message){
+	public String sendTest(@PathVariable(value = "message") String message) {
 		
 		String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		
@@ -86,7 +88,7 @@ public class TopicExChangeMessageController {
 	
 	@ApiOperation(value = "使用 topic主题交换机实现 发布订阅模式交换机功能", notes = "发送消息")
 	@GetMapping(value = "/sendToFanout/{message}")
-	public String sendToFanout(@PathVariable(value = "message") String message){
+	public String sendToFanout(@PathVariable(value = "message") String message) {
 		
 		JSONObject json = new JSONObject();
 		json.put("messageData", message);
@@ -97,7 +99,6 @@ public class TopicExChangeMessageController {
 		log.info("消息发送成功");
 		return message;
 	}
-	
 	
 	
 }

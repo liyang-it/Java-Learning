@@ -22,13 +22,14 @@ public class MessageListenerConfig {
 	
 	private final CachingConnectionFactory connectionFactory;
 	private final MyAckReceiver ackReceiver;
-	public MessageListenerConfig(CachingConnectionFactory connectionFactory, MyAckReceiver ackReceiver){
+	
+	public MessageListenerConfig(CachingConnectionFactory connectionFactory, MyAckReceiver ackReceiver) {
 		this.connectionFactory = connectionFactory;
 		this.ackReceiver = ackReceiver;
 	}
 	
 	@Bean
-	public SimpleMessageListenerContainer simpleMessageListenerContainer(){
+	public SimpleMessageListenerContainer simpleMessageListenerContainer() {
 		SimpleMessageListenerContainer container = new SimpleMessageListenerContainer(connectionFactory);
 		
 		// 创建的并发消费者的数量。默认值为 1设置并发消费者的数量。

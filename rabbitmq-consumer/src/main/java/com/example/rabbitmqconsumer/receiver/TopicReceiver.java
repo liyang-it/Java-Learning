@@ -21,19 +21,19 @@ public class TopicReceiver {
 	
 	@RabbitListener(queues = "topic.man")
 	@RabbitHandler
-	public void topicManMessage(JSONObject json){
+	public void topicManMessage(JSONObject json) {
 		log.info("主题型交换机 队列：[{}] 接收到消息：{}", "topic.man", json);
 	}
 	
 	@RabbitListener(queues = "topic.woman")
 	@RabbitHandler
-	public void topicWoManMessage(JSONObject json){
+	public void topicWoManMessage(JSONObject json) {
 		log.info("主题型交换机 队列：[{}] 接收到消息：{}", "topic.woman", json);
 	}
 	
 	@RabbitListener(queues = "order.test")
 	@RabbitHandler
-	public void topicTestMessage(JSONObject json){
+	public void topicTestMessage(JSONObject json) {
 		log.info("主题型交换机 队列：[{}] 接收到消息：{}", "order.test", json);
 	}
 }

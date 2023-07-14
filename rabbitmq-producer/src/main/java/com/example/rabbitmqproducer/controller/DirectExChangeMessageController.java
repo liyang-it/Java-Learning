@@ -1,4 +1,5 @@
 package com.example.rabbitmqproducer.controller;
+
 import com.alibaba.fastjson2.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -32,13 +34,14 @@ import java.util.UUID;
 public class DirectExChangeMessageController {
 	
 	private final RabbitTemplate template;
-	public DirectExChangeMessageController(RabbitTemplate template){
+	
+	public DirectExChangeMessageController(RabbitTemplate template) {
 		this.template = template;
 	}
 	
 	@ApiOperation(value = "将消息携带绑定键值: TestDirectRouting 发送到交换机 TestDirectExchange", notes = "发送消息")
 	@GetMapping(value = "/send/{message}")
-	public String send(@PathVariable(value = "message") String message){
+	public String send(@PathVariable(value = "message") String message) {
 		
 		String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		
@@ -54,7 +57,7 @@ public class DirectExChangeMessageController {
 	
 	@ApiOperation(value = "测试异常发送,将消息 发送到 不存在的交换机", notes = "发送消息")
 	@GetMapping(value = "/sendErrorMsg/{message}")
-	public String sendErrorMsg(@PathVariable(value = "message") String message){
+	public String sendErrorMsg(@PathVariable(value = "message") String message) {
 		
 		String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		
@@ -70,7 +73,7 @@ public class DirectExChangeMessageController {
 	
 	@ApiOperation(value = "测试异常发送,将消息 发送到不存在的路由键", notes = "发送消息")
 	@GetMapping(value = "/sendErrorMsg2/{message}")
-	public String sendErrorMsg2(@PathVariable(value = "message") String message){
+	public String sendErrorMsg2(@PathVariable(value = "message") String message) {
 		
 		String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		
@@ -87,8 +90,7 @@ public class DirectExChangeMessageController {
 	
 	@ApiOperation(value = "使用 Message对象发送消息，并且持久化", notes = "发送消息")
 	@GetMapping(value = "/sendMessage/{message}")
-	public String send2(@PathVariable(value = "message") String message){
-		
+	public String send2(@PathVariable(value = "message") String message) {
 		
 		
 		String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
@@ -97,12 +99,10 @@ public class DirectExChangeMessageController {
 		json.put("messageData", message);
 		json.put("messageId", msgId);
 		json.put("createTime", createTime);
-
-		Message msg = MessageBuilder.withBody(json.toJSONString().getBytes(StandardCharsets.UTF_8))
-				.setExpiration("1000000")
+		
+		Message msg = MessageBuilder.withBody(json.toJSONString().getBytes(StandardCharsets.UTF_8)).setExpiration("1000000")
 				// 持久化消息
-				.setDeliveryMode(MessageDeliveryMode.PERSISTENT)
-				.build();
+				.setDeliveryMode(MessageDeliveryMode.PERSISTENT).build();
 		
 		// 将消息携带绑定键值: TestDirectRouting 发送到交换机 TestDirectExchange
 		template.convertAndSend("TestDirectExchange", "DirectMsgQueue", msg);

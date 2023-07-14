@@ -10,10 +10,9 @@ import org.springframework.core.env.Environment;
 
 /**
  * @author ifi-liyang
- *
  */
 @SpringBootApplication
-@ComponentScan(basePackages={"cn.hutool.extra.spring", "com.example.rabbitmqproducer", "com.example.rabbitmqproducer.controller"})
+@ComponentScan(basePackages = {"cn.hutool.extra.spring", "com.example.rabbitmqproducer", "com.example.rabbitmqproducer.controller"})
 @Slf4j
 @EnableRabbit
 public class RabbitmqProducerApplication {
@@ -30,5 +29,4 @@ public class RabbitmqProducerApplication {
 		log.info("RabbitMQ 延迟插件下载地址：https://github.com/rabbitmq/rabbitmq-delayed-message-exchange");
 		
 	}
-	
 }

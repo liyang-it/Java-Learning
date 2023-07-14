@@ -1,4 +1,5 @@
 package com.example.rabbitmqproducer.controller;
+
 import com.alibaba.fastjson2.JSONObject;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,13 +30,14 @@ import java.util.UUID;
 public class FanoutExChangeMessageController {
 	
 	private final RabbitTemplate template;
-	public FanoutExChangeMessageController(RabbitTemplate template){
+	
+	public FanoutExChangeMessageController(RabbitTemplate template) {
 		this.template = template;
 	}
 	
 	@ApiOperation(value = "将消息 发送到交换机 TestDirectExchange", notes = "发送消息")
 	@GetMapping(value = "/send/{message}")
-	public String send(@PathVariable(value = "message") String message){
+	public String send(@PathVariable(value = "message") String message) {
 		
 		String createTime = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
 		
@@ -48,10 +50,6 @@ public class FanoutExChangeMessageController {
 		log.info("消息发送成功");
 		return message;
 	}
-	
-	
-	
-	
 	
 	
 }

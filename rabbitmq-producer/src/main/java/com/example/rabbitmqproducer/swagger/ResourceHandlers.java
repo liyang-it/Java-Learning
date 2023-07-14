@@ -1,7 +1,9 @@
 package com.example.rabbitmqproducer.swagger;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 
 /**
  * <h2>拦截器配置解决swagger页面404问题</h2>
@@ -14,7 +16,7 @@ import org.springframework.web.servlet.config.annotation.*;
  */
 @Configuration
 public class ResourceHandlers extends WebMvcConfigurationSupport {
-
+	
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 		// 加入 swagger-ui.html 映射，不然会 404找不到页面

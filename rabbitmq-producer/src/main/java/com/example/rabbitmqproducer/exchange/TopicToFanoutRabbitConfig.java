@@ -21,17 +21,17 @@ public class TopicToFanoutRabbitConfig {
 	
 	
 	@Bean
-	public Queue topicFanoutDogQueue(){
+	public Queue topicFanoutDogQueue() {
 		return QueueBuilder.durable(TOPIC_FANOUT_DOG_QUEUE).build();
 	}
 	
 	@Bean
-	public Queue topicFanoutCatQueue(){
+	public Queue topicFanoutCatQueue() {
 		return QueueBuilder.durable(TOPIC_FANOUT_CAT_QUEUE).build();
 	}
 	
 	@Bean
-	public TopicExchange topicFanoutExchange(){
+	public TopicExchange topicFanoutExchange() {
 		return new TopicExchange(TOPIC_FANOUT_EXCHANGE);
 	}
 	
@@ -39,7 +39,7 @@ public class TopicToFanoutRabbitConfig {
 	 * 将 dog 绑定交换机，路由键为 通配符 topic.fanout 开头，只要路由键开头是 topic.fanout ，消息分发到这个队列，这样就是实现了 发布订阅模式交换机
 	 */
 	@Bean
-	public Binding bindingTopicSubDogExchange(){
+	public Binding bindingTopicSubDogExchange() {
 		return BindingBuilder.bind(topicFanoutDogQueue()).to(topicFanoutExchange()).with(TOPIC_FANOUT_PREFIX);
 	}
 	
@@ -48,7 +48,7 @@ public class TopicToFanoutRabbitConfig {
 	 * 将 cat 绑定交换机，路由键为 通配符 topic.fanout 开头，只要路由键开头是 topic.fanout ，消息分发到这个队列，这样就是实现了 发布订阅模式交换机
 	 */
 	@Bean
-	public Binding bindingTopicSubCatExchange(){
+	public Binding bindingTopicSubCatExchange() {
 		return BindingBuilder.bind(topicFanoutCatQueue()).to(topicFanoutExchange()).with(TOPIC_FANOUT_PREFIX);
 	}
 	
