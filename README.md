@@ -6,3 +6,4 @@ Java练习项目，巩固只是，以后想起来要用能找到
 
 * rabbitmq-producer MQ生产者
 * rabbitmq-consumer MQ消费者
+* elasticsearch [ElasticSearch SpringBoot整合Easy-es框架]
