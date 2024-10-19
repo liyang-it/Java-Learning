@@ -10,9 +10,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="elasticsearch" />
         <module name="rabbitmq-consumer" />
         <module name="rabbitmq-producer" />
+        <module name="elasticsearch" />
+        <module name="mqtt" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="curd" options="-parameters" />
       <module name="elasticsearch" options="-parameters" />
+      <module name="mqtt" options="-parameters" />
       <module name="rabbitmq-consumer" options="-parameters" />
       <module name="rabbitmq-producer" options="-parameters" />
     </option>
